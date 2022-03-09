@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Curso de JavaScript</title>
+	</head>
+	<body>
+		<header class="header">
+			<h1>JavaScript Para Completos Iniciantes</h1>
+		</header>
+		<form id="form">
+			<h4 id="add-user">Add User</h4>
+			<span class="msg"></span>
+			<div class="input-control">
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name" />
+			</div>
+			<div class="input-control">
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" />
+			</div>
+			<button id="submitButton" type="submit">Submit</button>
+		</form>
+		<ul class="items">
+			<!-- <li class="item">Item 1</li>
+			<li class="item">Item 2</li>
+			<li class="item">Item 3</li> -->
+		</ul>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				font-family: 'Space Mono';
+				font-weight: 500;
+				outline: none;
+			}
+			body {
+				width: 100%;
+				min-height: 110vh;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 50px;
+				flex-direction: column;
+				background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3)),
+					url('https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+				background-size: cover;
+				background-position: center;
+			}
+			.header {
+				width: 100%;
+				height: 12vh;
+				position: fixed;
+				top: 0;
+				left: 0;
+				z-index: 9999;
+				background-color: rebeccapurple;
+				color: #ffffff;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			form {
+				width: min(90%, 500px);
+				background-color: white;
+				padding: 30px 50px 0;
+				border-radius: 10px;
+				margin-top: 100px;
+			}
+			form > h4 {
+				font-size: 32px;
+				font-weight: 700;
+				margin-bottom: 20px;
+			}
+
+			.msgNoValid {
+				font-weight: bold;
+				margin-bottom: 10px;
+				background: red;
+				color: #ffffff;
+				width: 100%;
+				display: block;
+				border-radius: 5px;
+				padding: 10px 10px;
+			}
+			.msgValid {
+				font-weight: bold;
+				margin-bottom: 10px;
+				background: green;
+				color: #ffffff;
+				width: 100%;
+				display: block;
+				border-radius: 5px;
+				padding: 10px 10px;
+			}
+
+			input {
+				width: 100%;
+				display: block;
+				padding: 10px 20px;
+				border-radius: 5px;
+				border: 2px solid #dddddd;
+				margin-top: 10px;
+			}
+			input[type='text'] {
+				margin-bottom: 20px;
+			}
+			button {
+				width: 100%;
+				height: 50px;
+				padding: 10px;
+				border: none;
+				background-color: rebeccapurple;
+				color: white;
+				border-radius: 5px;
+				font-weight: bold;
+				font-size: 18px;
+				cursor: pointer;
+				margin-top: 15px;
+				margin-bottom: 30px;
+			}
+			.items {
+				display: flex;
+				align-items: stretch;
+				flex-direction: column;
+				gap: 0.5rem;
+				list-style: none;
+				width: min(90%, 500px);
+			}
+			.item {
+				background-color: rebeccapurple;
+				color: white;
+				width: 100%;
+				padding: 10px 20px;
+				border-radius: 5px;
+			}
+		</style>
+		<script src="./main.js"></script>
+	</body>
+</html>
